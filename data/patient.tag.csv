@@ -1,0 +1,4 @@
+id,name,active
+patient_tag_pro,Pro,True
+patient_tag_doc,Doc,False
+patient_tag_ceo,Ceo,True

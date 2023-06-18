@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- view_patient_tag_form -->
+        <record id="view_cancel_appointment_form" model="ir.ui.view">
+            <field name="name">cancel.appointment.wizard.form</field>
+            <field name="model">cancel.appointment.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <group>
+                            <field name="appointment_id"/>
+                            <field name="reason"/>
+                        </group>
+                        <group>
+                            <field name="data_cancel"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="action_cancel" type="object" string="Cancel Appointment" class="btn-primary"
+                                date-hotkey="q"/>
+                        or
+                        <button special="cancel" date-hotkey="z" string="Discard"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions_view_patient_tag -->
+        <record id="action_cancel_appointment" model="ir.actions.act_window">
+            <field name="name">Cancel Appointment</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">cancel.appointment.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <!-- menu_actions_view_cancel_appointment-->
+<!--        <menuitem id="menu_cancellation_appointment_wizard"-->
+<!--                  name="Cancellation"-->
+<!--                  parent="menu_appointment_master"-->
+<!--                  action="action_cancel_appointment"-->
+<!--                  sequence="3"/>-->
+
+    </data>
+</odoo>

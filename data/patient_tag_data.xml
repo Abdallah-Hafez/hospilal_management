@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="patient_tag_mr" model="patient.tag">
+            <field name="name">Mr</field>
+        </record>
+
+        <record id="patient_tag_eng" model="patient.tag">
+            <field name="name">Eng</field>
+        </record>
+
+        <record id="patient_tag_vip" model="patient.tag">
+            <field name="name">Vip</field>
+        </record>
+
+        <record id="patient_tag_kid" model="patient.tag">
+            <field name="name">Kid</field>
+        </record>
+
+        <record id="patient_tag_adult" model="patient.tag">
+            <field name="name">Adult</field>
+<!--            <field name="active">False</field>-->
+            <field name="active" eval="False"/>
+        </record>
+    </data>
+</odoo>
