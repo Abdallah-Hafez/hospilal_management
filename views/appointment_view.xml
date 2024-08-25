@@ -63,7 +63,7 @@
                                 <field name="appointment_time"/>
                                 <button name="object_test" string="Object Button" type="object" class="oe_highlight"
                                         groups="base.group_no_one"/>
-                                <button name="%(hospital_manag.action_hospital_patient)d" string="Action Button"
+                                <button name="%(hospilal_management.action_hospital_patient)d" string="Action Button"
                                         help="On Clicking This Button, You Will Be Redirected To Patient Records"
                                         groups="base.group_no_one"
                                         confirm="Are You Sure To Open The Patient Action ?"
